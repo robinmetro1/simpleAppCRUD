@@ -1,0 +1,30 @@
+﻿@model Film
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit Film</h2>
+
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" type="text" class="form-control" />
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Category"></label>
+            <input asp-for="Category" type="text" class="form-control" />
+        </div>
+        <div>
+         </div class="row">
+
+        <div class="col-6 col-md-3">
+            <button type="submit" class="btn btn-primary" style="width:150px">Update</button>
+
+        <div class="col-6  col-md-3">
+            <a asp-controller="Film" asp-action="Index" class="btn btn-outline-secondary" style="width:150px">Back to List</a>
+        </div>
+        </div>
+    </div>
+
+
+</form>
